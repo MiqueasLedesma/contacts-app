@@ -1,5 +1,3 @@
-import { Footer } from "./components/Footer";
-import { Navbar } from "./components/Navbar";
 import "./globals.css";
 
 import React from "react";
@@ -16,11 +14,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="bg-slate-300">
-        <Navbar />
-        {children}
-        <Footer />
-      </body>
+      <body className="bg-slate-300">{children}</body>
     </html>
   );
 }
